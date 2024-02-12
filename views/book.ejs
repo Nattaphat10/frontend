@@ -2,12 +2,25 @@
 <html >
 <head>
     <title>Book</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <h1>Vive Book</h1>
+    <table class="book-table">
+        <tr>
+            <th>Tittle</th>
+            <th>Author</th>
+        </tr>
+    <tr>
+    <td><%= book.tittle %></td>
+    <td><%= book.Author %></td>
+    </tr>
+    </table>
+    <dev class="link-center"></dev>
     <h1><%= book.title %></h1>
-    <p>Author : <%= book.author %></p>
     <a href="/update/<%= book.id %>">Edit</a>
     <a href="/delete/<%= book.id %>">Delete</a>
     <a href="/">Back to List</a>
+</dev>
 </body>
 </html>
